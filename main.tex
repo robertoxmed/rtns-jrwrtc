@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=30mm, bmargin=30mm, tmargin=30mm}
+
+\usepackage{pdfpages}
+\usepackage{hyperref}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{center}
+	\thispagestyle{empty}
+	\LARGE{Proceedings of the}\\[-0.9ex]
+	\vspace{0.1cm}
+	\begin{center}
+
+		\vspace{0.1cm}
+		\textbf{\LARGE{14th Junior Research Workshop on Real-Time Computing}}
+		\bigskip\par
+
+		\textbf{\LARGE{JRWRTC 2021}}\\
+		\vspace{0.3cm}
+		\large{\texttt{https://rtns2021.univ-nantes.fr/jrwrtc/}}\\[-0.5ex]
+		\vspace{0.3cm}
+		\large{April 7-8, 2021}\\[-1ex]
+		\vspace{0.6cm}
+	\end{center}
+	\medskip
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Word from chairs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newpage
+
+\section*{Message from the workshop chairs}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Program committee
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\section*{Program Committee}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ToC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\newpage
+
+\newcommand{\addsection}[3]{\addtocontents{toc}{\protect\contentsline{section}{\protect\numberline{#1}#2}{#3}}}
+\newcommand{\addsubsection}[3]{\addtocontents{toc}{\protect\contentsline{subsection}{\protect\numberline{#1}#2}{#3}}}
+
+% Construct contents
+\addsection{1}{SOS: Introducing Shared Overrun Servers to Improve Probabilistic 
+Scheduling}{1}
+\addsection{2}{File 1-2}{3}
+\addsection{3}{File 2-1}{4}
+\addsection{4}{File 2-2}{9}
+\addsection{5}{File 3-1}{10}
+\addsection{6}{File 3-2}{17}
+
+%\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Papers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepdf[pages=-]{pdfs/paper1.pdf}
+
+	
+\end{document}
